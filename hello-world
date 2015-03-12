@@ -1,0 +1,8 @@
+Python：
+print（'hello world'）
+OR
+s='hello world'
+print(s)
+
+JAVA:
+System.out.println("hello world!");
