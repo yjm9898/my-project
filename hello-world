@@ -6,3 +6,4 @@ print(s)
 
 JAVA:
 System.out.println("hello world!");
+这是程序员的第一个程序。
