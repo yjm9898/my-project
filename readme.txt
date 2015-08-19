@@ -1,0 +1,1 @@
+everyday is a gift which gold to ours.
