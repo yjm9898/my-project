@@ -226,4 +226,4 @@ DefaultCorsProcessor 处理过程如下：
 如果全部合法，则在 response header 中添加响应的字段，并交给负责该请求的类处理，如果不合法，则拒绝该请求。
 5. 总结
 
-本文介绍了 CORS 的知识以及如何在 Spring MVC 中配置 CORS 。
+本文介绍了 CORS 的常用概念知识以及如何在 Spring MVC 中配置 CORS ，在接下来的文章中会介绍在实际项目中的使用和注意点。敬请期待！
