@@ -1,6 +1,12 @@
 ##java变长数据结构扩容小结：
 
 ---
+> 线程安全
+* 线程安全就是多线程访问时，采用了加锁机制，当一个线程访问该类的某个数据时，进行保护，其它线程不能进行
+访问**直到该线程**读取完，其它线程菜可使用.不会出现数据不一致或者数据污染.
+* 线程不安全就是不提供数据访问保护，多线程先后更改数据会产生数据不一致或者数据污染的情况.
+* 一般使用synchronized关键字锁同步
+---
 
 ###1.StringBuffer（线程不安全），StringBuilder（安全）：两者的初始化和扩容机制是一样的
 >1.初始大小 16。
@@ -13,7 +19,7 @@
 >2.扩容策略：len * 2 + 2
 
 ```
-/**
+	/**
      * This implements the expansion semantics of ensureCapacity with no
      * size check or synchronization.
      */
@@ -121,7 +127,7 @@ private void doubleCapacity() {
     }
 ```
 
-###5.Vecter（线程不安全），stack（线程安全）
+###5.Vector（线程不安全），stack（线程安全）
 >
 
 类别|Vecter |stack
