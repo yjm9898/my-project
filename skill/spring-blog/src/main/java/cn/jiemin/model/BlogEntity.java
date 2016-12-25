@@ -1,4 +1,4 @@
-package cn.zhisheng.model;
+package cn.jiemin.model;
 
 import javax.persistence.*;
 import java.util.Date;
