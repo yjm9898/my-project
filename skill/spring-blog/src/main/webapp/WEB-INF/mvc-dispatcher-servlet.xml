@@ -29,11 +29,11 @@
     </bean>
 
     <!-- 表示JPA Repository所在的包 -->
-    <jpa:repositories base-package="cn.zhisheng.repository"/>
+    <jpa:repositories base-package="cn.jiemin.repository"/>
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceUnitName" value="defaultPersistenceUnit"/>
-        <property name="packagesToScan" value="cn.zhisheng.model" />
+        <property name="packagesToScan" value="cn.jiemin.model" />
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
         </property>
