@@ -127,10 +127,12 @@ private void doubleCapacity() {
     }
 ```
 
-###5.Vector（线程不安全），stack（线程安全）
+
+###5.Vector（线程安全），stack（线程安全）
+
 >
 
-类别|Vecter |stack
+类别|Vector |stack
 ---|---|---
 初始大小 | 10 | 0
 扩容机制 | len*2 |1
